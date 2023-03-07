@@ -18,6 +18,7 @@ public class HomePageTest {
 	///post global steps
 	@BeforeSuite
 	public void startDBConnection() {
+		System.out.println("This is demo line");
 		System.out.println("BS---StartDBConnection");
 	}
 	@BeforeTest
@@ -49,11 +50,11 @@ public class HomePageTest {
 	
 	@AfterSuite
 	public void disconnetDBConnection() {
-		System.out.println("AS---DisconnectDBConnection");
+		System.out.println("AS---DisconnectDB Connection");
 	}
 	@AfterTest
 	public void deleteUser() {
-		System.out.println("AT ---> DeleteUser");
+		System.out.println("AT ---> Delete  User");
 	}
 	@AfterClass
 	public void closeBrowser() {
